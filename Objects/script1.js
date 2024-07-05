@@ -1,9 +1,10 @@
-const DayTime = (a) => {
-    const oddNumbers = a.filter(num => num % 2 !== 0).sort((a, b) => a - b);
-    return a.map(num => num % 2 !== 0 ? oddNumbers.shift() : num); 
-  } 
-  
-  const SomeArray = [1, 5,4, 3,6, 7, 15, -10, -12, 13, 11];
-  console.log(DayTime(SomeArray));
-  
-  
+function checkValueInArray(arr, value) {
+    'use strict';
+
+    return arr.includes(value);
+}
+
+const array = [1, 2, 3, 4, 5];
+const valueToCheck = 3;
+
+console.log(checkValueInArray(array, valueToCheck)); 

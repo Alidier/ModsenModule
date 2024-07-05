@@ -1,14 +1,9 @@
-var countBits = function(n) {
-     let binary = (n>>>0).toString(2);
-     let count = 0;
-     for (let i=0; i < binary.length; i++) {
-        if (binary[i] === '1') {
-          count++;
-        }
-     }
-     return count;
-  };
+var x = 10;
+var x = 20; // Повторное объявление переменной с помощью var допустимо
 
 
-let Number = 1234;
-console.log(countBits(Number));
+let y = 10;
+let y = 20; // Повторное объявление недопустимо
+
+const z = 10;
+const z = 20; // Повторное объявление недопустимо 

@@ -1,13 +1,12 @@
-function amountOfPages(summary){
-  let totalDigits = 0;
-  let n=0;
-
-  while (totalDigits < summary) {
-    totalDigits += n.toString().length;
-    n++;
-  }
-  return n;
+function halfSumArray(array) {
+       let halfindex = Math.ceil(array.length / 2) ;
+       let firsthalf = array.slice(0,halfindex);
+      
+       let sum = firsthalf.reduce((a,b) => a + b, 0);
+       
+       return sum;
 }
 
-let summary = 25;
-console.log(amountOfPages(summary));
+let number = [1,2,3,5,6];
+
+console.log(halfSumArray(number));
